@@ -1,0 +1,228 @@
+/* General Body Styling */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    color: #343a40;
+}
+
+/* Header */
+.dashboard-header {
+    background: linear-gradient(90deg, #007bff, #0056b3);
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.dashboard-header .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-menu {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logout-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.2s;
+}
+
+.logout-btn:hover {
+    background-color: #c82333;
+}
+
+/* Main Content */
+.dashboard-main {
+    padding: 2rem;
+}
+
+/* Quote Section */
+.quote-section {
+    background-color: #e9ecef;
+    text-align: center;
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    font-style: italic;
+    font-size: 1.1rem;
+    color: #495057;
+}
+
+/* Dashboard Content Layout */
+.dashboard-content {
+    display: flex;
+    gap: 2rem;
+}
+
+/* Doctors List (Left Side) */
+.doctors-list {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.doctors-list h2 {
+    margin-top: 0;
+    color: #007bff;
+    border-bottom: 2px solid #e9ecef;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.specialization-card {
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.specialization-card h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: #343a40;
+    font-size: 1.1rem;
+}
+
+.specialization-card i {
+    color: #007bff;
+    margin-right: 0.5rem;
+}
+
+.specialization-card p {
+    margin: 0.25rem 0 0.25rem 1.5rem;
+    color: #6c757d;
+}
+
+/* Chatbot (Right Side) */
+.chatbot-container {
+    flex: 2;
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+.chatbot-container h2 {
+    margin-top: 0;
+    text-align: center;
+    color: #007bff;
+}
+
+.chatbot-subtitle {
+    text-align: center;
+    margin-top: -0.5rem;
+    color: #6c757d;
+    margin-bottom: 1.5rem;
+}
+
+.chat-window {
+    flex-grow: 1;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 1rem;
+    overflow-y: auto;
+    height: 300px;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.message {
+    padding: 0.5rem 1rem;
+    border-radius: 18px;
+    max-width: 80%;
+    line-height: 1.4;
+}
+
+.user-message {
+    background-color: #007bff;
+    color: white;
+    align-self: flex-end;
+    border-bottom-right-radius: 4px;
+}
+
+.bot-message {
+    background-color: #e9ecef;
+    color: #343a40;
+    align-self: flex-start;
+    border-bottom-left-radius: 4px;
+}
+
+.chat-input-area {
+    display: flex;
+    gap: 0.5rem;
+}
+
+#chat-input {
+    flex-grow: 1;
+    padding: 0.75rem;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+#send-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s;
+}
+
+#send-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+.dashboard-footer {
+    background-color: #343a40;
+    color: #f8f9fa;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.dashboard-footer h2 {
+    margin-top: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .dashboard-content {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .dashboard-header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .dashboard-main {
+        padding: 1rem;
+    }
+}

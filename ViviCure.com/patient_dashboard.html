@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Dashboard - ViviCure</title>
+    <link rel="stylesheet" href="patient_dashboard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="dashboard-header">
+        <div class="logo">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 8L16 4L20 8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 14L16 18L20 14" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M4 14V11C4 9.89543 4.89543 9 6 9H26C27.1046 9 28 9.89543 28 11V21C28 22.1046 27.1046 23 26 23H6C4.89543 23 4 22.1046 4 21V18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            ViviCure
+        </div>
+        <div class="user-menu">
+            <span>Welcome, Patient!</span>
+            <button id="logout-btn" class="logout-btn">Logout</button>
+        </div>
+    </header>
+
+    <main class="dashboard-main">
+        <section class="quote-section">
+            <p id="daily-quote">"The greatest wealth is health."</p>
+        </section>
+
+        <div class="dashboard-content">
+            <!-- Left Side: Doctor Specializations -->
+            <aside class="doctors-list">
+                <h2>Our Specialists</h2>
+                <div class="specialization-card">
+                    <h3><i class="fas fa-heart-pulse"></i> Cardiology</h3>
+                    <p>Dr. Amelia Bennett</p>
+                    <p>Dr. James Carter</p>
+                </div>
+                <div class="specialization-card">
+                    <h3><i class="fas fa-brain"></i> Neurology</h3>
+                    <p>Dr. Sofia Rodriguez</p>
+                </div>
+                <div class="specialization-card">
+                    <h3><i class="fas fa-baby"></i> Pediatrics</h3>
+                    <p>Dr. David Lee</p>
+                    <p>Dr. Chloe White</p>
+                </div>
+                 <div class="specialization-card">
+                    <h3><i class="fas fa-tooth"></i> Dentistry</h3>
+                    <p>Dr. Olivia Martinez</p>
+                </div>
+            </aside>
+
+            <!-- Right Side: Chatbot -->
+            <section class="chatbot-container">
+                <h2>ViviCure Assistant</h2>
+                <p class="chatbot-subtitle">Have a question? Ask our AI assistant.</p>
+                <div id="chat-window" class="chat-window">
+                    <!-- Chat messages will be appended here -->
+                     <div class="message bot-message">
+                        <p>Hello! How can I help you today?</p>
+                    </div>
+                </div>
+                <div class="chat-input-area">
+                    <input type="text" id="chat-input" placeholder="Type your message...">
+                    <button id="send-btn"><i class="fas fa-paper-plane"></i></button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="dashboard-footer">
+        <h2>About ViviCure</h2>
+        <p>ViviCure is a revolutionary platform dedicated to bridging the gap between patients and doctors. Our mission is to provide accessible, high-quality healthcare for everyone, everywhere. Our team of dedicated professionals works tirelessly to ensure you receive the best care possible.</p>
+    </footer>
+
+    <script src="patient_dashboard.js"></script>
+</body>
+</html>
