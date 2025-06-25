@@ -17,14 +17,19 @@ users = {
         }
     },
     "doctors": {
-        # Pre-assigned doctor credentials
+        # Updated doctors with a common password
         "DOC123": {
-            "hashed_password": generate_password_hash("doctorpass1"),
+            "hashed_password": generate_password_hash("pass123"),
             "name": "Dr. Emily Carter"
         },
         "DOC456": {
-            "hashed_password": generate_password_hash("doctorpass2"),
+            "hashed_password": generate_password_hash("pass123"),
             "name": "Dr. Ben Adams"
+        },
+        # Added new doctor as requested
+        "12306952": {
+            "hashed_password": generate_password_hash("pass123"),
+            "name": "Dr. Alex Ray"
         }
     }
 }
@@ -148,4 +153,3 @@ if __name__ == '__main__':
     # 2. Run the script: python app.py
     # The server will be running on http://127.0.0.1:5000
     app.run(debug=True)
-

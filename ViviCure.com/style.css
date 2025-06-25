@@ -83,8 +83,18 @@ body {
 .subtitle {
     text-align: center;
     color: #6c757d;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
+
+/* Error Message Styling */
+.error-message {
+    color: #dc3545;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    min-height: 20px;
+}
+
 
 /* Input field styling */
 .input-group {
@@ -126,6 +136,7 @@ body {
     font-weight: 600;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s;
+    margin-bottom: 0.5rem;
 }
 
 .submit-btn:hover {
@@ -133,12 +144,32 @@ body {
     transform: translateY(-2px);
 }
 
+/* Signup button */
+.signup-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.signup-btn:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+
+
 /* Divider */
 .divider {
     display: flex;
     align-items: center;
     text-align: center;
-    margin: 1.5rem 0;
+    margin: 1rem 0;
     color: #adb5bd;
 }
 
@@ -151,29 +182,6 @@ body {
 
 .divider span {
     padding: 0 1rem;
-}
-
-/* Google Sign-in Button */
-.google-btn {
-    width: 100%;
-    padding: 12px;
-    background-color: #fff;
-    color: #444;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    transition: background-color 0.3s, box-shadow 0.2s;
-}
-
-.google-btn:hover {
-    background-color: #f8f9fa;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
 /* Right side: Information Panel */

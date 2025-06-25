@@ -19,27 +19,26 @@
             <div id="patient-form" class="form-section active">
                 <h1 class="title">Patient Login & Signup</h1>
                 <p class="subtitle">Welcome! Please enter your details.</p>
-                <form>
+                <form id="patient-login-form">
+                    <!-- Added an element for error messages -->
+                    <p id="patient-error-message" class="error-message"></p>
                     <div class="input-group">
-                        <label for="patient-name">Full Name</label>
-                        <input type="text" id="patient-name" placeholder="John Doe" required>
+                        <label for="patient-name">Full Name (Only for Signup)</label>
+                        <input type="text" id="patient-name" placeholder="John Doe">
                     </div>
                     <div class="input-group">
                         <label for="patient-email">Email</label>
-                        <input type="email" id="patient-email" placeholder="john.doe@example.com" required>
+                        <input type="email" id="patient-email" placeholder="patient@example.com" required>
                     </div>
                     <div class="input-group">
                         <label for="patient-password">Password</label>
-                        <input type="password" id="patient-password" placeholder="••••••••" required>
+                        <input type="password" id="patient-password" placeholder="password123" required>
                     </div>
-                    <button type="submit" class="submit-btn">Sign Up / Login</button>
+                    <button type="submit" class="submit-btn">Login</button>
                     <div class="divider">
                         <span>OR</span>
                     </div>
-                    <button type="button" class="google-btn">
-                        <svg aria-hidden="true" class="native svg-icon" width="18" height="18" viewBox="0 0 18 18"><path d="M16.51 8.1H9v3h4.4c-.1 1-1.2 3.4-4.4 3.4-2.6 0-4.8-2.2-4.8-4.8s2.2-4.8 4.8-4.8c1.5 0 2.5 1 3 1.5l2.2-2.2C14.2 1.2 11.8 0 9 0 4 0 0 4 0 9s4 9 9 9c5.1 0 8.7-3.5 8.7-8.7 0-.6-.1-1.2-.2-1.7z" fill="#4285F4"></path></svg>
-                        Sign in with Google
-                    </button>
+                    <button type="button" id="patient-signup-btn" class="signup-btn">Sign Up</button>
                 </form>
             </div>
 
@@ -47,7 +46,9 @@
             <div id="doctor-form" class="form-section">
                 <h1 class="title">Doctor Login</h1>
                 <p class="subtitle">Please enter your credentials to log in.</p>
-                <form>
+                <form id="doctor-login-form">
+                    <!-- Added an element for error messages -->
+                    <p id="doctor-error-message" class="error-message"></p>
                     <div class="input-group">
                         <label for="doctor-id">Doctor ID</label>
                         <input type="text" id="doctor-id" placeholder="Enter your unique ID" required>
